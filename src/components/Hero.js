@@ -21,7 +21,7 @@ const Header = () => {
       <nav>
         <ul className={`ul-list ${menuOpen ? "open" : ""}`}>
             <li>
-             <p>Phone: <a href="tel:+918200552865">+91 8200552865</a></p>
+             <p>Phone: <a href="tel:+917359956059">+91 7359956059</a></p>
             </li>
           <li>
             <a href="#home" onClick={(e) => handleNavClick(e, "#home")}>
