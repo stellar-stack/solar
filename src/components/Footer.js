@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="contact-info">
           <h4>Contact Us</h4>
-          <p>Phone: <a href="tel:+918200552865">+91 8200552865</a></p>
+          <p>Phone: <a href="tel:+917359956059">+91 7359956059</a></p>
           <p>Email: <a href="mailto:info@solarco.com">info@solarco.com</a></p>
         </div>
 
