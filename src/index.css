@@ -147,3 +147,219 @@ body {
     font-size: 1.2rem;
   }
 }
+
+
+/* other sections */
+
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* SERVICES GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.service-card p {
+  color: #555;
+}
+
+/* ABOUT */
+.about-section {
+  height: 100vh; /* full viewport height */
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  background: #f0f8ff; /* subtle light background */
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #004d40;
+}
+
+.about-content p {
+  max-width: 700px;
+  margin: 1rem auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+
+/* interactive */
+.interactive-solar {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.solar-panel-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.solar-panel {
+  cursor: pointer;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.solar-panel:focus {
+  box-shadow: 0 0 12px 3px #ffd700;
+}
+
+.solar-fact {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #444;
+  min-height: 3rem;
+  font-style: italic;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  /* .contact-form {
+    padding: 0 1rem;
+  } */
+}
+
+
+/* Footer Styling*/
+
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 2rem 1.5rem;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+  gap: 2rem;
+}
+
+.contact-info,
+.socials {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.contact-info h4,
+.socials h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact-info a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a svg {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2px #ffd700);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer-bottom p + p {
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .socials {
+    text-align: center;
+    min-width: auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+

@@ -20,6 +20,9 @@ const Header = () => {
 
       <nav>
         <ul className={`ul-list ${menuOpen ? "open" : ""}`}>
+            <li>
+             <p>Phone: <a href="tel:+918200552865">+91 8200552865</a></p>
+            </li>
           <li>
             <a href="#home" onClick={(e) => handleNavClick(e, "#home")}>
               Home
@@ -37,7 +40,7 @@ const Header = () => {
           </li>
           <li>
             <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")}>
-              Contact
+              Fact
             </a>
           </li>
         </ul>
@@ -74,7 +77,7 @@ const HeroSection = () => (
     />
     <div className="video-overlay"></div> {/* ← Overlay */}
   </div>
-  
+
     <div className="hero-content">
       <h1>Power Your Future with Solar Energy</h1>
       <p>Lower your energy bills and help save the planet by switching to solar.</p>
@@ -89,7 +92,7 @@ export default function App() {
       <Header />
       <HeroSection />
       {/* You can add other sections like Services, About, Contact here */}
-      <section id="services" style={{ height: "100vh", padding: "2rem" }}>
+      {/* <section id="services" style={{ height: "100vh", padding: "2rem" }}>
         <h2>Services</h2>
         <p>Details about services...</p>
       </section>
@@ -100,7 +103,7 @@ export default function App() {
       <section id="contact" style={{ height: "100vh", padding: "2rem" }}>
         <h2>Contact</h2>
         <p>Contact form or details...</p>
-      </section>
+      </section> */}
     </>
   );
 }
